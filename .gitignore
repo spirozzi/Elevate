@@ -1,0 +1,33 @@
+# Dependency/NodeJS modules directory
+node_modules
+src/node_modules
+src/npm-debug.log
+./dev-server-out.log
+./prod-server-out.log
+./npm-debug.log
+dev-server-out.log
+prod-server-out.log
+npm-debug.log
+database.db
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Logs and Databases
+*.log
+*.db
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.Trash
+ehthumbs.db
+Thumbs.db
