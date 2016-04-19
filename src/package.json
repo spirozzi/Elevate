@@ -1,0 +1,51 @@
+{
+	"name": "Elevate",
+	"version": "0.1.0",
+	"description": "A web server and interface to Elevate - an elevation-based real-world route finder",
+	"keywords": [
+		"elevate",
+		"elevation",
+		"routefinder",
+		"routemapper",
+		"biking",
+		"walking",
+		"running",
+		"cycling",
+		"transportation",
+		"googlemaps",
+		"maps",
+		"map",
+		"mapping"
+	],
+	"author": "Stephen Pirozzi <spirozzi@umass.edu>",
+	"contributors": [{
+		"name": "Stephen Pirozzi",
+		"email": "spirozzi@umass.edu"
+	}],
+	"preferGlobal": true,
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/spirozzi/Elevate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/spirozzi/Elevate/issues"
+	},
+	"scripts": {
+		"rundevserver": "export NODE_ENV=development && node index.js",
+		"runproductionserver": "export NODE_ENV=production && node index.js"
+	},
+	"dependencies": {
+		"node-pre-gyp":			"^0.6.26",
+		"body-parser":			"^1.15.0",
+		"ejs":							"^2.4.1",
+		"express":					"^4.13.4",
+		"express-session":	"^1.13.0",
+		"socket.io":				"^1.4.5",
+		"sqlite3":					"^3.1.3",
+		"morgan":						"^1.7.0",
+		"assert":						"^1.3.0",
+		"rwlock":						"^5.0.0"
+	}
+}
