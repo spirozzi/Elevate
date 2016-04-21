@@ -1,9 +1,35 @@
 <!DOCTYPE html>
+<html>
 <head>
-<title>Elevate - The Elevation-based Route Finder</title>
+	<title>Elevate - The Elevation-based Route Finder</title>
+	<!-- Load required fonts for CSS -->
+	<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+	<!-- Load main client CSS -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<!-- Load required JS libraries -->
+	<script src="../lib/socket.io-1.4.5.js"></script>
+	<script src="../lib/jquery-2.2.3.min.js"></script>
+	<!-- Load main client JS -->
+	<script src="../assets/clientjs/index.js"></script>
 </head>
-
 <body>
-	<h1>Hello World</h1>
+	<div id="iconbar">
+		<div id="iconcontainer">
+			<img src="../assets/img/logo.png" id="icon" />
+		</div>
+	</div>
+	<div id="uibar">
+		<div id="uicontainer">
+			<form id="trendform" method="post"><br>
+				<input type="radio" name="trendoption" value="FLAT" checked><span class="radio">Flat</span><br>
+				<input type="radio" name="trendoption" value="UPHILL"><span class="radio">Uphill</span><br>
+				<input type="radio" name="trendoption" value="DOWNHILL"><span class="radio"> Downhill</span>
+				<input name="postbutton" type="submit" class="button" value="Submit">
+			</form>
+		</div>
+	</div>
+	<div id="map">
+	</div>
 </body>
 </html>
