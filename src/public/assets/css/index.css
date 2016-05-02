@@ -42,7 +42,7 @@ p {
 }
 
 #uicontainer {
-	width:50%;
+	width:60%;
 	margin:0 auto;
 }
 
@@ -56,4 +56,12 @@ p {
 	font-size:16px;
 	font-weight:500;
 	font-style:normal;
+}
+
+.button {
+	font-family:'Droid Sans', serif;
+	font-size:16px;
+	font-weight:700;
+	font-style:normal;
+	background-color:buttonface;
 }
