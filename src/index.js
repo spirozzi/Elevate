@@ -17,11 +17,11 @@ var app = express();
 
 // the launch script will set NODE_ENV; set Express's 'env' var appropriately
 if (process.env.NODE_ENV === 'production') {
-    app.set('env', 'production');
-    morgan = undefined; // morgan: disables HTTP req logging
+	app.set('env', 'production');
+	morgan = undefined; // morgan: disables HTTP req logging
 } else if (process.env.NODE_ENV === 'development') {
-    app.set('env', 'development');
-    app.use(morgan('combined')); // morgan: enables HTTP req logging
+	app.set('env', 'development');
+	app.use(morgan('combined')); // morgan: enables HTTP req logging
 }
 
 // store the newly-set 'env' variable: 'production' or 'development'
@@ -44,9 +44,9 @@ app.use(bodyparser.urlencoded({
 // Express server initialization
 
 var server = app.listen(3000, function() {
-		console.log('----------------------------------------------');
-    console.log('Elevate server started, listening on port 3000');
-    console.log('----------------------------------------------');
+	console.log('----------------------------------------------');
+	console.log('Elevate server started, listening on port 3000');
+	console.log('----------------------------------------------');
 });
 // socket.io: init to allow Express server to accept WebSocket connections
 var websocket = socketio(server);
@@ -66,6 +66,6 @@ module.exports = {
 var routehandler = require('./routes/routehandler');
 app.use('/', routehandler); // server can now handle routes
 
-// set up socket.io connection-specific event listening/handlers
+// set up socket.io connection-specific event listeners/handlers
 var sockethandler = require('./sockets/sockethandler');
 // server can now handle WebSocket connections/data transfers

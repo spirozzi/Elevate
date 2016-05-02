@@ -4,8 +4,6 @@ transfer handling to the main exported Express app's socket.io instance,
 'sockio'.
 */
 
-// Imports
-
 // get access to all index.js exports
 var mainapp = require('../index');
 // get a reference to the Express app's socket.io instance

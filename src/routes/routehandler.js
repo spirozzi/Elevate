@@ -1,15 +1,16 @@
 /*
 routehandler.js exports an instance of Express's 'Router', which handles 
-HTTP requests. It renders and responds with the correct EJS templates based 
-on those requests.
+HTTP requests. It renders and responds with the correct EJS template based 
+on the HTTP request received.
 */
 
 // Imports
 
 var express = require('express');
-// create the Router object that handles routing clients' HTTP requests
-//   This router will be exported and used by the main Express app to route 
-//   all HTTP requests
+/*
+Create the Router object that handles routing clients' HTTP requests. This 
+router will be exported/used by the main Express app to route all HTTP reqs
+*/
 var router = express.Router();
 // require main Express server app
 var mainapp = require('../index');
